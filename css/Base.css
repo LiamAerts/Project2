@@ -8,6 +8,10 @@ main {
     color: #7a402e;
 }
 
+footer {
+    background-color: #4e4d30;
+}
+
 .row {
     flex-wrap: wrap;
 }
