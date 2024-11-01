@@ -1,0 +1,61 @@
+/* Navbar CSS, for on all pages.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+main {
+    block-size: border-box;
+    display: flex;
+    color: #7a402e;
+}
+
+.row {
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0;
+    background-color: #D1CDC4;
+    font-family: "Lato", "Arial";
+    font-weight: 400;
+}
+
+
+main {
+    padding-top: 55px;
+}
+
+.navbar {
+    background-color: #61603c;
+    color: #d1cdc4;
+}
+
+.navbar-nav .nav-link {
+    color: #d1cdc4;
+    text-align: center;
+}
+
+.navbar-nav .nav-link.active {
+    color: #D1CDC4;
+    background-color: transparent;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 2px;
+
+}
+
+.navbar-brand {
+    color: #d1cdc4;
+
+    margin: 0;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #61604c;
+    color: white;
+}
+
+.line {
+    border-right: 3px solid #2f4d49;
+    margin: auto 10px;
+    padding: 15px
+}

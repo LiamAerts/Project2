@@ -1,0 +1,82 @@
+/* General link styling */
+a {
+    text-decoration: none;
+    color: #BF5030;
+}
+
+a:hover {
+    color: #7a402e;
+}
+
+/* Styling for welcome section */
+.ind-welkom {
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    border: 2px #BF5030 solid;
+}
+
+/* Styling for info section */
+.ind-winfo {
+    margin-top: 15px;
+    padding-left: 2px;
+    border: 2px #BF5030 solid;
+}
+
+.ind-winfoimg {
+    float: left;
+    border: 1px #BF5030 solid;
+    margin: 2px;
+    margin-right: 7px;
+    overflow: hidden;
+    height: 200px;
+}
+
+/* Carousel styling */
+.ind-carousel {
+    border: 2px #BF5030 solid;
+    margin-top: 10px;
+}
+
+.ind-carousel ul {
+    list-style-position: outside;
+}
+
+.ind-p2,
+.ind-p1 {
+    list-style: none;
+}
+
+.ind-ul img {
+    padding-right: 5px;
+    justify-content: center;
+    align-content: center;
+    height: 20px;
+}
+
+/* Accordion customization */
+.accordion-button {
+    background-color: #61603c;
+    color: #D1CDC4;
+    border: 1px solid #BF5030;
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #D1CDC4;
+    background-color: #61603c;
+}
+
+.accordion-body {
+    color: #7a402e;
+    background-color: #b2ada2;
+    border: 1px solid #BF5030;
+    border-top: hidden;
+}
+
+/* Ensure images fit within accordion using Bootstrap's class */
+.accordion-body img {
+    width: 30;
+    height: auto;
+}
