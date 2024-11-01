@@ -9,20 +9,12 @@
     <meta name="author" content="Liam Aerts" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main page.</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link href="./css/personal.css" rel="stylesheet" />
     <link href="./css/Base.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-      defer
-    ></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-md">
@@ -46,7 +38,7 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item pe-4">
-              <a class="nav-link active" href="./index.html">Main page</a>
+              <a class="nav-link" href="./index.html">Main page</a>
             </li>
             <li class="nav-item pe-4">
               <a class="nav-link" href="./CV.html">CV page</a>
@@ -55,7 +47,7 @@
               <a class="nav-link" href="./projects.html">Projects</a>
             </li>
             <li class="nav-item pe-4">
-              <a class="nav-link" href="./personal.html">Personal</a>
+              <a class="nav-link active" href="./personal.html">Personal</a>
             </li>
             <li class="nav-item pe-4">
               <a class="nav-link" href="./contact.html">Contact</a>
@@ -64,53 +56,201 @@
         </div>
       </div>
     </nav>
-    <main>
-      <div class="row left">
-        <h1>Boulderen</h1>
-        <section class="content-block">
-          <img src="./img/boulderen.jpg" alt="climbing" class="img" />
-          <p class="ctext">
-            Ik ben iemand die echt kan genieten van te klimmen. Met heel je
-            lichaam op een punt in de lucht zitten, op de spot een hele puzzel
-            oplossen voor welk de beste volgende plek is zorgt er voor dat het
-            een perfecte sport voor beide je brein én je lichaam! Ik probeer
-            elke week minstens een keer te gaan om daar dan mijn conditie en
-            spieren zo goed mogelijk te houden.
-          </p>
-        </section>
-
-        <h1>Zwemmen</h1>
-        <section class="content-block">
-          <p class="ctext">
-            Zwemmen is voor mij een moment om even tot rust te komen, met heel
-            je lichaam in het water lijkt het precies alsof alle zwaartekracht
-            opeens weg is. En is dus voor mij een perfecte moment om al mijn
-            gedachten op een lijn te krijgen. Daarom zie ik het ook voor mijzelf
-            eerder als een hobby dan een sport, omdat ik het onregelmatig doe en
-            niet actief er mee bezig ben. Maar die momenten dat ik dan wel ga is
-            voor mij echt een perfect rustmoment. Ook de glijbanen en
-            wildwaterbanen zijn voor mij een perfecte stroming van adrenaline en
-            plezier. Het is ook een perfecte locatie om over alles te denken en
-            op nieuwe ideeën te komen!
-          </p>
-          <img src="./img/zwemmen.jpg" alt="swimming" class="img-right" />
-        </section>
+    <!-- Carousel Section -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide mb-4 w-50 mx-auto"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
       </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#climbing">
+            <img
+              src="./img/boulderen.jpg"
+              class="d-block w-100"
+              alt="Climbing"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Boulderen</h5>
+              <p>
+                Enjoy the thrill of climbing and solving puzzles high above the
+                ground!
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#swimming">
+            <img src="./img/zwemmen.jpg" class="d-block w-100" alt="Swimming" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Zwemmen</h5>
+              <p>Relax and let go of gravity in the water.</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#hamilton">
+            <img
+              src="./img/hamilton.jpg"
+              class="d-block w-100"
+              alt="Hamilton"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Hamilton</h5>
+              <p>The revolutionary musical about Alexander Hamilton.</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#heathers">
+            <img
+              src="./img/heathers.jpg"
+              class="d-block w-100"
+              alt="Heathers"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Heathers</h5>
+              <p>A darkly comic musical based on the iconic film.</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#les-miserables">
+            <img
+              src="./img/LESMIS.jpg"
+              class="d-block w-100"
+              alt="Les Misérables"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Les Misérables</h5>
+              <p>The epic tale of redemption and revolution.</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#in-the-heights">
+            <img
+              src="./img/intheheights.jpg"
+              class="d-block w-100"
+              alt="In the Heights"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>In the Heights</h5>
+              <p>A vibrant musical celebrating community and culture.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-      <div class="row right">
-        <h1>Musicals</h1>
-        <section class="content-block">
-          <img src="./img/LESMIS.jpg" alt="musicals" class="img" />
-          <p class="ctext">
-            Musicals zijn een van mijn grootste passies. Het verhaal, de muziek,
-            de dans en de live-ervaring maken elke voorstelling uniek. Ik hou
-            van hoe elke acteur en actrice zich volledig inleeft in hun
-            personage en dat brengt een magische sfeer naar het publiek. Het is
-            ook een geweldige manier om cultuur op te snuiven en nieuwe
-            perspectieven te ontdekken. Ik probeer zo vaak mogelijk naar een
-            musical te gaan en geniet er elke keer enorm van.
-          </p>
-        </section>
+    <main class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 id="climbing">Boulderen</h2>
+          <section class="content-block">
+            <img src="./img/boulderen.jpg" alt="climbing" class="img" />
+            <p class="ctext">
+              Ik ben iemand die echt kan genieten van te klimmen. Met heel je
+              lichaam op een punt in de lucht zitten, op de spot een hele puzzel
+              oplossen voor welk de beste volgende plek is zorgt er voor dat het
+              een perfecte sport voor beide je brein én je lichaam! Ik probeer
+              elke week minstens een keer te gaan om daar dan mijn conditie en
+              spieren zo goed mogelijk te houden.
+            </p>
+          </section>
+
+          <h2 d="swimming">Zwemmen</h2>
+          <section class="content-block">
+            <p class="ctext">
+              Zwemmen is voor mij een moment om even tot rust te komen, met heel
+              je lichaam in het water lijkt het precies alsof alle zwaartekracht
+              opeens weg is. En is dus voor mij een perfecte moment om al mijn
+              gedachten op een lijn te krijgen. Daarom zie ik het ook voor
+              mijzelf eerder als een hobby dan een sport, omdat ik het
+              onregelmatig doe en niet actief er mee bezig ben. Maar die
+              momenten dat ik dan wel ga is voor mij echt een perfect
+              rustmoment. Ook de glijbanen en wildwaterbanen zijn voor mij een
+              perfecte stroming van adrenaline en plezier. Het is ook een
+              perfecte locatie om over alles te denken en op nieuwe ideeën te
+              komen!
+            </p>
+            <img src="./img/zwemmen.jpg" alt="swimming" class="img-right" />
+          </section>
+        </div>
+
+        <div class="col-md-6">
+          <h1 id="hamilton heathers in-the-heights les-miserables">Musicals</h1>
+          <section class="content-block">
+            <img src="./img/LESMIS.jpg" alt="musicals" class="img" />
+            <p class="ctext">
+              Musicals zijn een van mijn grootste passies. Het verhaal, de
+              muziek, de dans en de live-ervaring maken elke voorstelling uniek.
+              Ik hou van hoe elke acteur en actrice zich volledig inleeft in hun
+              personage en dat brengt een magische sfeer naar het publiek. Het
+              is ook een geweldige manier om cultuur op te snuiven en nieuwe
+              perspectieven te ontdekken. Ik probeer zo vaak mogelijk naar een
+              musical te gaan en geniet er elke keer enorm van.
+            </p>
+          </section>
+        </div>
       </div>
     </main>
     <footer class="text-light text-center py-3 mt-5">
